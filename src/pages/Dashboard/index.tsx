@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import React, { useState, useEffect, useCallback } from 'react';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 import { View } from 'react-native';
+=======
+import React, { useState, useEffect } from 'react';
+import FeatherIcon from 'react-native-vector-icons/Feather';
+
+import { View, Image } from 'react-native';
+>>>>>>> c5270a5bf19a7b4c91bac226557ac8e4c4040e12
 
 import formatValue from '../../utils/formatValue';
 import { useCart } from '../../hooks/cart';
@@ -35,20 +42,30 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
+<<<<<<< HEAD
       const response = await api.get('/products');
 
       setProducts(response.data);
+=======
+      // TODO
+>>>>>>> c5270a5bf19a7b4c91bac226557ac8e4c4040e12
     }
 
     loadProducts();
   }, []);
 
+<<<<<<< HEAD
   const handleAddToCart = useCallback(
     (item: Product) => {
       addToCart(item);
     },
     [addToCart],
   );
+=======
+  function handleAddToCart(item: Product): void {
+    // TODO
+  }
+>>>>>>> c5270a5bf19a7b4c91bac226557ac8e4c4040e12
 
   return (
     <Container>

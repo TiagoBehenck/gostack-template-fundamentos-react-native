@@ -37,7 +37,11 @@ const CartProvider: React.FC = ({ children }) => {
   }, []);
 
   const addToCart = useCallback(async product => {
+<<<<<<< HEAD
     setProducts([...products, product]);
+=======
+    // TODO ADD A NEW ITEM TO THE CART
+>>>>>>> c5270a5bf19a7b4c91bac226557ac8e4c4040e12
   }, []);
 
   const increment = useCallback(async id => {
